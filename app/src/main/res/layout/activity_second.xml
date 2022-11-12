@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/phone"
+    tools:context=".SecondActivity">
+    <TextView
+        android:id="@+id/my_number_tv"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"
+        android:text="Введите код на введенный номер:"
+        android:gravity="center"
+        android:background="@drawable/background01"
+        />
+    <TextView
+        android:id="@+id/code_tv"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/my_number_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Код"
+        android:textColor="@color/black"
+        android:background="@drawable/background01"
+       android:gravity="center"/>
+<Button
+    android:id="@+id/generate_code_btn"
+    android:layout_width="250dp"
+    android:layout_height="50dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/code_tv"
+    android:layout_marginTop="20dp"
+    android:text="generate code"
+    style="@style/style01"
+    android:background="@drawable/background02"/>
+    <EditText
+        android:id="@+id/generated_code_et"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generate_code_btn"
+        android:hint="ваш код"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/signIn_btn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/generated_code_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Sign in"
+        style="@style/style01"
+        android:background="@drawable/background02"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
